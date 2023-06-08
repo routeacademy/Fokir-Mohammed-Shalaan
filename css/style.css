@@ -570,38 +570,38 @@ a {
 
 .sectionFour .sectionFourPic .img:first-child {
   background-color: rgb(173, 0, 0);
-  background-image: url(/img/4.jpg);
+  background-image: url(../img/4.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .sectionFour .sectionFourPic .img:nth-child(2) {
   background-color: rgb(173, 0, 0);
-  background-image: url(/img/1.jpg);
+  background-image: url(../img/1.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .sectionFour .sectionFourPic .img:nth-child(3) {
-  background-image: url(/img/6.jpg);
+  background-image: url(../img/6.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .sectionFour .sectionFourPic .img:nth-child(4) {
-  background-image: url(/img/6.jpg);
+  background-image: url(../img/6.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .sectionFour .sectionFourPic .img:nth-child(5) {
-  background-image: url(/img/4.jpg);
+  background-image: url(../img/4.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .sectionFour .sectionFourPic .img:nth-child(6) {
-  background-image: url(/img/2.jpg);
+  background-image: url(../img/2.jpg);
   background-size: cover;
   background-position: center;
 }
