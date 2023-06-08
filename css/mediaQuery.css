@@ -1,0 +1,322 @@
+/* media query for resposnsive design  */
+
+
+
+
+/* ======================================================== */
+/* small screen  */
+
+
+@media screen and (max-width:750px) {
+
+    /*
+//==========================================================//
+                hello section   ===> header and some data 
+//=========================================================//
+*/
+    .hellowSection .header .links {
+
+        display: none;
+
+    }
+
+    .hellowSection .bodyHellowSection h1 {
+        font-size: 50px;
+
+
+    }
+
+    .hellowSection .header .iconMenu {
+
+        transition: 0.4s all ease-in-out;
+        display: block;
+
+
+    }
+
+    .hellowSection .bodyHellowSection .second-child {
+        font-size: 17px;
+    }
+
+    /*
+//==========================================================//
+                section Two   ===> header and some data 
+//=========================================================//
+*/
+    .secondSection .leftSecondSection {
+        /* width: fit-content; */
+        width: 100%;
+        margin: auto;
+        /* padding-right: 30px; */
+        /* display: block; */
+        position: relative;
+        direction: none;
+    }
+
+
+
+    .secondSection .righSecondSection {
+        width: 100%;
+        display: block;
+        text-align: left;
+        /* float: right; */
+    }
+
+    .secondSection .righSecondSection {
+        margin-block: 30px;
+    }
+
+    /*
+//==========================================================//
+                section three   ===> Our Services
+//=========================================================//
+*/
+
+    .therdSection .therdSectionData .therdsectionDataBox {
+        padding: 20px;
+        width: 100%;
+
+    }
+
+    /*
+//==========================================================//
+                section four   ===> Our Portfolio
+//=========================================================//
+*/
+
+    .sectionFour .sectionFourLinks li {
+        font-size: 16px;
+        padding-right: 10px;
+
+    }
+
+    .sectionFour .sectionFourPic .img {
+
+        width: 100%;
+        height: 300px;
+    }
+
+    /*
+//==========================================================//
+                section five   ===> some data
+//=========================================================//
+*/
+
+    .sectionFive .sectionfiveBox {
+        /* background-color: #ffffff; */
+        width: 100%;
+        /* float: left; */
+
+    }
+
+
+    /*
+//==========================================================//
+                section seven   ===> Our Blog
+//=========================================================//
+*/
+
+
+
+    .sevenSection .sevenSectionBox {
+        margin-top: 50px;
+        width: 80%;
+        height: 60vh;
+
+    }
+
+    /*
+//==========================================================//
+                section eight   ===> Contact Us
+//=========================================================//
+*/
+
+    .eightSection .up input:nth-child(1) {
+        width: 100%;
+
+    }
+
+    .eightSection .up input:nth-child(2) {
+        width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* ======================================================== */
+/* meduim screen  */
+
+
+
+@media screen and (min-width:750px) and (max-width:768px) {
+
+    /*
+//==========================================================//
+                hello section   ===> header and some data 
+//=========================================================//
+*/
+    .hellowSection .header a {
+        color: azure;
+        padding-left: 6px;
+
+    }
+
+    /*
+//==========================================================//
+                section three   ===> Our Services
+//=========================================================//
+*/
+
+    .therdSection .therdSectionData .therdsectionDataBox {
+        padding: 20px;
+        width: 100%;
+
+    }
+
+    /*
+//==========================================================//
+                section four   ===> Our Portfolio
+//=========================================================//
+*/
+    .sectionFour .sectionFourPic .img {
+
+        width: 100%;
+        height: 100%;
+    }
+
+    /*
+//==========================================================//
+    section seven   ===> Our Blog
+//=========================================================//
+*/
+
+
+
+    .sevenSection .sevenSectionBox {
+        margin-top: 50px;
+        width: 80%;
+        height: 60vh;
+
+    }
+
+    /*
+//==========================================================//
+                section eight   ===> Contact Us
+//=========================================================//
+*/
+
+    .eightSection .up input:nth-child(1) {
+        width: 100%;
+
+    }
+
+    .eightSection .up input:nth-child(2) {
+        width: 100%;
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+/* ======================================================== */
+/* larg screen  */
+
+
+@media screen and (min-width:769px) and (max-width:992px) {
+    .hellowSection .header a {
+        color: azure;
+        padding-left: 6px;
+
+    }
+
+    /*
+//==========================================================//
+                section three   ===> Our Services
+//=========================================================//
+*/
+
+    .therdSection .therdSectionData .therdsectionDataBox {
+        padding: 20px;
+        width: 100%;
+
+    }
+
+
+    /*
+//==========================================================//
+                section four   ===> Our Portfolio
+//=========================================================//
+*/
+
+    .sectionFour .sectionFourLinks li {
+        font-size: 16px;
+        padding-right: 10px;
+
+    }
+
+    .sectionFour .sectionFourPic .img {
+
+        width: 45%;
+        height: 300px;
+    }
+
+    /*
+//==========================================================//
+    section seven   ===> Our Blog
+//=========================================================//
+*/
+
+
+
+    .sevenSection .sevenSectionBox {
+        margin-top: 50px;
+        width: 40%;
+        height: 60vh;
+
+    }
+
+    /*
+//==========================================================//
+                section eight   ===> Contact Us
+//=========================================================//
+*/
+
+    .eightSection .up input:nth-child(1) {
+        width: 100%;
+
+    }
+
+    .eightSection .up input:nth-child(2) {
+        width: 100%;
+    }
+
+
+
+}
+
+
+/* ========================================================= */
+/* larg screen  */
+
+@media screen and (min-width:993px) and (max-width:1200px) {}

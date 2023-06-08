@@ -1,0 +1,890 @@
+:root {
+  --mainColor: #ff305b;
+  --iconMenu: rgb(168, 168, 168);
+  --pFont: 18px;
+  --pColor: rgb(78, 78, 78);
+  --BackgroundSection: #f1f1f1;
+  --padingBlock: 100px;
+  --iconSize: 29px;
+}
+
+@font-face {
+  font-family: "oneFontBlack";
+  src: url(../fonts/SourceSansPro-Black.ttf);
+}
+
+@font-face {
+  font-family: "oneFontLight";
+  src: url(../fonts/SourceSansPro-Light.ttf);
+}
+
+@font-face {
+  font-family: "oneFontRegular";
+  src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+
+/* static selector */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font-family: "oneFontRegular";
+}
+
+.contaner {
+  width: 70%;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*
+//==========================================================//
+                hello section   ===> header and some data 
+//=========================================================//
+*/
+
+.hellowSection {
+  background-color: bisque;
+  height: 100vh;
+  background-image: url(../img/modelMan.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hellowSection .filter {
+  background-color: rgba(5, 5, 5, 0.788);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hellowSection .header {
+  background-color: rgba(37, 37, 37, 0.247);
+  height: 60px;
+  padding: 20px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+
+.hellowSection .header .logo {
+  position: sticky;
+  font-family: "oneFontBlack";
+  font-weight: 600;
+  font-size: 21px;
+  color: var(--mainColor);
+  display: block;
+  float: left;
+}
+
+.hellowSection .header .links {
+  float: right;
+  /* display: none; */
+}
+
+.hellowSection .header .iconMenu {
+  float: right;
+  color: var(--iconMenu);
+  font-size: 24px;
+  transition: 0.3s all ease-in-out;
+  display: none;
+}
+
+.hellowSection .header .iconMenu:hover {
+  color: var(--mainColor);
+}
+
+.hellowSection .header ul {
+}
+
+.hellowSection .header ul li {
+  vertical-align: middle;
+  list-style: none;
+  display: inline-block;
+}
+
+.hellowSection .header ul li:first-child a {
+  color: var(--mainColor);
+}
+
+.hellowSection .header ul li:first-child a:hover {
+  color: white;
+}
+
+.hellowSection .header a {
+  color: azure;
+  padding-left: 13px;
+  text-decoration: none;
+  transition: 0.3s all ease-out;
+}
+
+.hellowSection .header a:hover {
+  color: var(--mainColor);
+}
+
+.clear {
+  clear: both;
+}
+
+/* the body of first section  */
+
+.hellowSection .bodyHellowSection {
+  color: white;
+  width: 100%;
+  margin: auto;
+  margin-top: 35vh;
+
+  /* other solution to center body contant  */
+  /* position: absolute;
+     top: 50%; 
+     right: calc(50% - 160px); 
+     transform-origin: 50%; */
+  text-align: center;
+}
+
+.hellowSection .bodyHellowSection p {
+  word-spacing: 3px;
+}
+
+.hellowSection .bodyHellowSection p:first-child {
+  font-size: 18px;
+  letter-spacing: 3px;
+  word-spacing: 2px;
+}
+
+.hellowSection .bodyHellowSection .second-child {
+  font-size: 23px;
+  margin-top: 11px;
+  width: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+  position: relative;
+}
+
+.hellowSection .bodyHellowSection .second-child span {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.hellowSection .bodyHellowSection .second-child span:nth-child(2) {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  animation: typing 6s infinite;
+}
+
+@keyframes typing {
+  0%,
+  10%,
+  100% {
+    width: 0px;
+  }
+
+  30%,
+  60% {
+    width: 110px;
+  }
+}
+
+.hellowSection .bodyHellowSection .second-child span:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: calc(100% - 13px);
+  border-right: 3px solid var(--mainColor);
+  width: 10px;
+  height: 100%;
+
+  animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor {
+  0%,
+  75% {
+    opacity: 1;
+  }
+
+  75%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.hellowSection .bodyHellowSection h1 {
+  color: var(--mainColor);
+  font-size: 70px;
+  font-weight: bold;
+}
+
+/*
+//==========================================================//
+                section Two   ===> header and some data 
+//=========================================================//
+*/
+
+.secondSection {
+  width: 100%;
+  padding-block: var(--padingBlock);
+}
+
+.secondSection .leftSecondSection {
+  width: 40%;
+  float: left;
+  direction: rtl;
+  padding-right: 30px;
+  position: relative;
+}
+
+.secondSection .leftSecondSection .imgeLeftSecondSection {
+  border-radius: 10px;
+  background-image: url(../img/modelMan.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 320px;
+  height: 400px;
+  position: relative;
+  transition: 0.3s all ease-in;
+  overflow: hidden;
+}
+
+.secondSection .leftSecondSection .backEffect {
+  width: 320px;
+  height: 400px;
+  position: relative;
+  transition: 0.3s all ease-in;
+}
+
+.secondSection .leftSecondSection .backEffect::before {
+  z-index: -10;
+  content: "";
+  position: absolute;
+  top: -5%;
+  right: 10%;
+  border: 11px solid rgb(70, 70, 70);
+  border-radius: 10px;
+  width: 290px;
+  height: 370px;
+}
+
+.secondSection .leftSecondSection .effect {
+  border-radius: 10px;
+  background-color: #2525258c;
+  text-align: center;
+  color: white;
+  position: absolute;
+  padding-top: 60%;
+  width: 100%;
+  height: 400px;
+  translate: 0px 400px 10px;
+  transition: 0.5s all ease-in-out;
+  /* color: red; */
+}
+
+.secondSection .leftSecondSection .effect i {
+  padding: 5px;
+  font-size: 23px;
+  transition: 0.3s all ease-in-out;
+}
+
+.secondSection .leftSecondSection .effect i:hover {
+  color: var(--mainColor);
+  cursor: pointer;
+}
+
+.secondSection .leftSecondSection:hover .effect {
+  background-color: #0e0103a4;
+  translate: 0px 0px 10px;
+  /* position: absolute; */
+}
+
+/* right side  */
+
+.secondSection .righSecondSection {
+  width: 60%;
+  float: right;
+  padding-left: 30px;
+}
+
+.secondSection .righSecondSection .upRightSecondSection {
+  border-bottom: 1px dotted black;
+  padding-bottom: 10px;
+}
+
+.secondSection .righSecondSection .upRightSecondSection h2 {
+  font-size: 40px;
+  position: relative;
+}
+
+.secondSection .righSecondSection .upRightSecondSection h2::before {
+  content: "I";
+  color: var(--mainColor);
+}
+
+.secondSection .righSecondSection .upRightSecondSection p {
+  font-size: 17px;
+  line-height: 1.9rem;
+}
+
+.secondSection .righSecondSection .meidelSecondSection {
+  color: var(--pColor);
+  padding-top: 10px;
+}
+
+.secondSection .righSecondSection .meidelSecondSection li {
+  /* padding-left: 10px; */
+  color: var(--pColor);
+  width: 47%;
+  padding-bottom: 9px;
+}
+
+.secondSection .righSecondSection .meidelSecondSection span {
+  /* font-size: 12px; */
+  /* font-family: "oneFontBlack"; */
+  color: var(--pColor);
+  font-weight: 600;
+}
+
+.secondSection .righSecondSection .dowenSecondSection {
+  padding-top: 15px;
+}
+
+.secondSection .righSecondSection .dowenSecondSection button {
+  background-color: var(--mainColor);
+  font-size: var(--pFont);
+  border: none;
+  color: white;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+}
+
+.secondSection .righSecondSection .dowenSecondSection button:hover {
+  background-color: red;
+}
+
+/*
+//==========================================================//
+                section three   ===> Our Services
+//=========================================================//
+*/
+.therdSection {
+  background-color: var(--BackgroundSection);
+  padding-block: var(--padingBlock);
+  text-align: center;
+  width: 100%;
+}
+
+.therdSection h1,
+.sectionFour h1,
+.sectionSix h1,
+.sevenSection h1,
+.eightSection h1 {
+  width: fit-content;
+  margin: auto;
+  position: relative;
+}
+
+.therdSection h1::after,
+.sectionFour h1::after,
+.sectionSix h1::after,
+.sevenSection h1::after,
+.eightSection h1::after {
+  content: "";
+  position: absolute;
+  bottom: -66%;
+  right: 5%;
+  display: block;
+  width: 90%;
+  height: 1px;
+  border-top: 1px solid var(--mainColor);
+  margin: 0px auto;
+}
+
+.therdSection h1::before,
+.sectionFour h1::before,
+.sectionSix h1::before,
+.sevenSection h1::before,
+.eightSection h1::before {
+  content: "";
+  position: absolute;
+  bottom: -76%;
+  right: 30%;
+  display: block;
+  width: 40%;
+  height: 9px;
+  border-top: 1px solid var(--mainColor);
+  border-bottom: 1px solid var(--mainColor);
+  margin: 0px auto;
+}
+
+.therdSection .therdSectionData {
+  width: 100%;
+  padding-block: 60px;
+}
+
+.therdSection .therdSectionData .therdsectionDataBox {
+  height: 70%;
+  padding: 20px;
+  width: 25%;
+  float: left;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+}
+
+.therdSection .therdSectionData .therdsectionDataBox:hover {
+  background-color: #ffffff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.therdSection .therdSectionData .therdsectionDataBox h2 {
+  padding-block: 5px;
+  font-size: 20px;
+}
+
+.therdSection .therdSectionData .therdsectionDataBox p {
+  font-size: 16px;
+  color: var(--pColor);
+}
+
+.therdSection .therdSectionData .therdsectionDataBox i {
+  color: var(--mainColor);
+  font-size: var(--iconSize);
+  padding-bottom: 20px;
+  transition: scale 400ms;
+}
+
+.therdSection .therdSectionData .therdsectionDataBox:hover i {
+  scale: 1.2;
+}
+
+/*
+//==========================================================//
+                section four   ===> Our Portfolio
+//=========================================================//
+*/
+
+.sectionFour {
+  padding-block: var(--padingBlock);
+  text-align: center;
+}
+
+.sectionFour .sectionFourLinks {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.sectionFour .sectionFourLinks li {
+  font-size: 19px;
+  padding-right: 39px;
+  transition: 0.3s all ease-in-out;
+}
+
+.sectionFour .sectionFourLinks li:hover {
+  color: var(--mainColor);
+  cursor: pointer;
+}
+
+/* used float left  */
+/* I can used flex To split the images better and faster */
+
+.sectionFour .sectionFourPic {
+  width: 100%;
+  height: 60vh;
+  /* background-color: rgb(182, 182, 182); */
+  /* display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; */
+}
+
+.sectionFour .sectionFourPic .img {
+  display: block;
+  margin: 10px;
+  width: 30%;
+  height: 48%;
+  background-color: rgb(216, 102, 102);
+  float: left;
+  position: relative;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+}
+
+.sectionFour .sectionFourPic .img::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  background-color: rgba(34, 34, 34, 0.486);
+  width: 100%;
+  height: 100%;
+  transition: 0.3s all ease-in-out;
+  /* transform: scale(0); */
+  text-orientation: bottom;
+  opacity: 0;
+}
+
+.sectionFour .sectionFourPic .img::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0%;
+  margin: 5px;
+  background-image: url(../img/link-solid.svg);
+  background-repeat: no-repeat;
+  width: 10%;
+  height: 10%;
+  opacity: 0;
+  transition: 0.3s all ease-in-out;
+}
+
+.sectionFour .sectionFourPic .img:hover::before {
+  opacity: 1;
+}
+
+.sectionFour .sectionFourPic .img:hover::after {
+  transform: scale(100%);
+  text-orientation: bottom;
+  opacity: 1;
+}
+
+.sectionFour .sectionFourPic .img:first-child {
+  background-color: rgb(173, 0, 0);
+  background-image: url(/img/4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.sectionFour .sectionFourPic .img:nth-child(2) {
+  background-color: rgb(173, 0, 0);
+  background-image: url(/img/1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.sectionFour .sectionFourPic .img:nth-child(3) {
+  background-image: url(/img/6.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.sectionFour .sectionFourPic .img:nth-child(4) {
+  background-image: url(/img/6.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.sectionFour .sectionFourPic .img:nth-child(5) {
+  background-image: url(/img/4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.sectionFour .sectionFourPic .img:nth-child(6) {
+  background-image: url(/img/2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/*
+//==========================================================//
+                section five   ===> some data
+//=========================================================//
+*/
+.sectionFive {
+  background-color: var(--BackgroundSection);
+  padding-block: var(--padingBlock);
+}
+
+.sectionFive .sectionfiveBox {
+  /* background-color: #ffffff; */
+  width: 24%;
+  float: left;
+  text-align: center;
+  padding: 20px;
+}
+
+.sectionFive .sectionfiveBox i {
+  color: var(--mainColor);
+  font-size: var(--iconSize);
+  padding-bottom: 10px;
+}
+
+/*
+//==========================================================//
+                section six   ===> some data
+//=========================================================//
+*/
+
+.sectionSix {
+  width: 100%;
+  padding-block: var(--padingBlock);
+  text-align: center;
+}
+
+.sectionSix .sectionSixBox {
+  width: 70%;
+  margin: 70px auto;
+  height: 30vh;
+  background-color: var(--BackgroundSection);
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.sectionSix .sectionSixBox .leftSideSectionSix {
+  width: 30%;
+  height: 100%;
+  padding: 30px;
+  /* background-color: #ff305b; */
+  float: left;
+}
+
+.sectionSix .sectionSixBox .leftSideSectionSix img {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  z-index: 4;
+}
+
+.sectionSix .sectionSixBox .leftSideSectionSix::after {
+  z-index: 1;
+  content: "223";
+  display: block;
+  width: 220px;
+  height: 220px;
+  background-color: var(--mainColor);
+  position: absolute;
+  top: -50px;
+  left: -90px;
+  border-radius: 50%;
+}
+
+.sectionSix .sectionSixBox .rightSideSectionSix {
+  padding: 30px;
+  width: 70%;
+  background-color: #eeeeee;
+  color: var(--pColor);
+  text-align: left;
+  height: 100%;
+  float: left;
+}
+
+.sectionSix .sectionSixBox .rightSideSectionSix .ico {
+  width: 100%;
+  padding-block: 10px;
+  color: #8a8a8a;
+  font-size: 13px;
+}
+
+.sectionSix .sectionSixBox .rightSideSectionSix .ico i {
+  width: 9px;
+  display: inline-block;
+}
+
+.sectionSix .sectionSixBox .rightSideSectionSix .ico p {
+  width: 80%;
+  display: inline-block;
+}
+
+.sectionSix .sectionSixBox .rightSideSectionSix .stars {
+  padding-block: 10px;
+  color: rgb(255, 208, 0);
+}
+
+.Feedback .move {
+  width: 30px;
+  height: 9px;
+  margin: auto;
+  border-radius: 5px;
+  background-color: var(--mainColor);
+}
+
+.sectionSix .sectionSixBox .rightSideSectionSix p:nth-child(1) {
+  display: inline-block;
+}
+
+/*
+//==========================================================//
+                section seven   ===> Our Blog
+//=========================================================//
+*/
+
+.sevenSection {
+  padding-block: var(--padingBlock);
+  background-color: var(--BackgroundSection);
+  text-align: center;
+}
+
+.sevenSection .sevenSectionBox {
+  margin-top: 50px;
+  width: 30%;
+  float: left;
+  text-align: left;
+  background-color: white;
+  margin-left: 20px;
+  transition: 0.3s all ease-in-out;
+}
+
+.sevenSection .sevenSectionBox:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.sevenSection .sevenSectionBox .img {
+  width: 100%;
+}
+
+.sevenSection .sevenSectionBox .img img {
+  width: 100%;
+  height: 30%;
+}
+
+.sevenSection .sevenSectionBox iframe {
+  aspect-ratio: 1 / 0.76;
+  width: 100%;
+  height: 30%;
+}
+
+.sevenSection .sevenSectionBox .date p {
+  padding: 8px;
+  color: rgb(92, 92, 92);
+  font-size: 13px;
+}
+
+.sevenSection .sevenSectionBox .titleSectionSeven {
+  padding-top: 8px;
+  padding-left: 8px;
+  padding-bottom: 4px;
+}
+
+.sevenSection .sevenSectionBox .titleSectionSeven a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 19px;
+}
+
+.sevenSection .sevenSectionBox .bodySevenSection {
+  padding: 8px;
+}
+
+.sevenSection .sevenSectionBox .bodySevenSection .redmore {
+  padding-top: 30px;
+  color: #8a8a8a;
+  font-size: 14px;
+}
+
+.sevenSection .sevenSectionBox .bodySevenSection .redmore a:hover {
+  color: var(--mainColor);
+}
+
+/*
+//==========================================================//
+                section eight   ===> Contact Us
+//=========================================================//
+*/
+
+.eightSection {
+  padding-block: var(--padingBlock);
+  text-align: center;
+}
+
+.eightSection form {
+  padding-top: 50px;
+  width: 85%;
+  margin: auto;
+}
+
+.eightSection input {
+  padding: 10px;
+  width: 100%;
+  margin-block: 10px;
+  border: 1px solid var(--mainColor);
+  border-radius: 4px;
+}
+
+.eightSection .up {
+  width: 100%;
+}
+
+.eightSection .up input:nth-child(1) {
+  width: 49%;
+  margin-right: 5px;
+  float: left;
+}
+
+.eightSection .up input:nth-child(2) {
+  width: 49%;
+  margin-left: 5px;
+  float: right;
+}
+
+.eightSection textarea {
+  resize: vertical;
+  padding: 10px;
+  width: 100%;
+  margin-block: 10px;
+  border: 1px solid var(--mainColor);
+  border-radius: 4px;
+}
+
+.eightSection button {
+  padding: 9px;
+  background-color: var(--mainColor);
+  border-radius: 4px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: block;
+}
+
+/*
+//==========================================================//
+                section footer   ===> end thx for watch 
+//=========================================================//
+*/
+
+.footer {
+  padding-block: 60px;
+  background-color: #313131;
+  color: white;
+  text-align: center;
+}
+
+.footer .social {
+  padding: 20px;
+}
+
+.footer .social i {
+  padding-left: 7px;
+  transition: 0.3s all ease-in-out;
+}
+
+.footer .social i:hover {
+  color: var(--mainColor);
+  cursor: pointer;
+}
+
+.footer span a {
+  color: var(--mainColor);
+}
